@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter number</title>
+</head>
+<body>
+  <script>
+    function readNumber() {
+      do {
+        let number = prompt('Enter the number:', '');
+
+        if (number === '' || number === null) {
+          return null;
+        } else if (+number) {
+          return number;
+        }
+      } while (true);
+    }
+    alert(`Your number is ${readNumber()}`)
+  </script>
+</body>
+</html>

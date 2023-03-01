@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check login</title>
+</head>
+<body>
+  <script>
+    'use strict';
+
+    let userLogin = prompt('Enter your login: ', '');
+    let userPassword;
+
+    if (userLogin === 'Admin') {
+      userPassword = prompt('Enter your password: ', '');
+      if (userPassword === 'IMTHEBOSSHERE') {
+        alert('Hello!');
+      } else if (userPassword != null && userPassword !== ''){
+        alert("It doesn't fit");
+      } else {
+        alert('Canceled');
+      }
+    } else if (userLogin != null && userLogin !== '') {
+      alert("I don't know you");
+    } else {
+      alert('Canceled');
+    }
+
+  </script>
+</body>
+</html>

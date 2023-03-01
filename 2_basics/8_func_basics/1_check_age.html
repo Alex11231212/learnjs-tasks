@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check age</title>
+</head>
+<body>
+  <script>
+    'use strict';
+
+    // with '?'
+    function checkAge(age) {
+      return (age > 18) ? true : confirm('Did the parents allow?');
+    }
+    alert(checkAge(15))
+  </script>
+
+  <script>
+    'use strict';
+
+    // with '||'
+    function checkAge(age) {
+      return (age > 18) || confirm('Did the parents allow?');
+    }
+    alert(checkAge(15))
+  </script>
+</body>
+</html>

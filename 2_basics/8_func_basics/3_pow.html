@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pow</title>
+</head>
+<body>
+  <script>
+    'use strict';
+
+    function pow (x, n) {
+      if (n < 1) {
+        return 'Wrong degree!'
+      }
+
+      let result = x;
+
+      for (let i = 1; i < n; i++) {
+        result *= x;
+      }
+
+      return result;
+    }
+
+    let x = +prompt('Enter a number', 0);
+    let n = +prompt('Enter a degree => 1', 1)
+
+    alert(pow(x, n));
+  </script>
+</body>
+</html>
